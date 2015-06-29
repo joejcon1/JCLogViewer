@@ -1,0 +1,26 @@
+PODS:
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.1):
+    - CocoaLumberjack/Default
+  - KVOController (1.0.3)
+  - Masonry (0.6.1)
+  - SAMCategories (0.5.2)
+
+DEPENDENCIES:
+  - CocoaLumberjack
+  - KVOController
+  - Masonry
+  - SAMCategories
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
+  Masonry: 4972309f2f134de9dd312f4dc4a21359b50e6caa
+  SAMCategories: bf8287f7961a0b343168d1fee16338dc1626ea39
+
+COCOAPODS: 0.37.1

@@ -6,12 +6,20 @@
 //  Copyright (c) 2015 JoeConway. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#define UNUSED __attribute__ ((unused))
+#define SelectorString(propName)    NSStringFromSelector(@selector(propName))
+
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-
+@property (nonatomic, strong) NSDictionary *launchOptions;
+@property (nonatomic, strong) NSURL *fileURL;
 
 @end
 

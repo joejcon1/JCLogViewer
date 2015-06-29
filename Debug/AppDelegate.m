@@ -7,16 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import "JCViewRouter.h"
 
 @interface AppDelegate ()
 
 @end
 
+
 @implementation AppDelegate
 
+@synthesize launchOptions = _launchOptions;
+@synthesize fileURL = _fileURL;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    DDLogWarn(@"Did finish Launching");
+    
+    self.launchOptions = launchOptions;
+    [[JCViewRouter theRouter] displayInitialLaunchScreen];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    NSLog(@"Open with from: %@ URL: %@",sourceApplication, url);
+    
+    self.fileURL = url;
+    
+    [[JCViewRouter theRouter] displayMainApplication];
     return YES;
 }
 
