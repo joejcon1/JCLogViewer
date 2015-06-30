@@ -56,7 +56,7 @@
 #
 - (void)_setupNavbar
 {
-    UISegmentedControl *seg = [[UISegmentedControl alloc] initWithItems:@[@"A",@"V",@"D",@"I",@"W",@"E"]];
+    UISegmentedControl *seg = [[UISegmentedControl alloc] initWithItems:@[@"V",@"D",@"I",@"W",@"E"]];
     [seg sizeToFit];
     seg.tintColor = [UIColor lightGrayColor];
     [seg setSelectedSegmentIndex:1];
